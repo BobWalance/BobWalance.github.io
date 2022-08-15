@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl4e6f2210bfcf040fb1c6fa3f157108b7"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl872790d11de2cd7037bea094434d20e5"/>
   <meta charset="utf-8">
   <title>v1_test</title>
   <meta name="generator" content="Google Web Designer 14.0.4.1108">
@@ -37,22 +37,22 @@ body {
     position: absolute;
     width: 100px;
     height: 60px;
-    top: 95px;
-    left: 39px;
+    left: 279px;
+    top: 20px;
 }
 .gwd-button-4rgs {
     position: absolute;
     width: 100px;
     height: 60px;
     top: 20px;
-    left: 39px;
+    left: 6px;
 }
 .gwd-button-ne33 {
     position: absolute;
     width: 100px;
-    height: 60px;
-    left: 39px;
-    top: 215px;
+    left: 6px;
+    top: 310px;
+    height: 80px;
 }
 .gwd-img-1e0m {
     position: absolute;
@@ -60,85 +60,86 @@ body {
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-okcl {
     position: absolute;
     visibility: hidden;
     height: 80px;
     width: 160px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-1lbf {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-kcsp {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-131r {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-p29w {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-1780 {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-img-1c1d {
     position: absolute;
     visibility: hidden;
     width: 160px;
     height: 80px;
-    left: 215px;
-    top: 382px;
+    left: 182px;
+    top: 131px;
 }
 .gwd-button-10p7 {
     position: absolute;
     width: 100px;
     height: 24px;
-    left: 39px;
-    top: 410px;
+    left: 6px;
+    top: 159px;
 }
 .gwd-p-6fow {
     position: absolute;
     width: 55px;
     height: 60px;
     top: 20px;
-    left: 160px;
+    left: 127px;
 }
 .gwd-p-1lxw {
     position: absolute;
     width: 55px;
     height: 60px;
-    top: 95px;
-    left: 160px;
+    left: 203px;
+    top: 20px;
+    text-align: right;
 }
 .gwd-p-dkab {
     position: absolute;
@@ -156,8 +157,29 @@ body {
     top: 4px;
 }
 .gwd-p-fpxq {
-    top: 185px;
-    left: 160px;
+    left: 127px;
+    top: 280px;
+    height: 170px;
+}
+.gwd-p-yyig {
+    left: 127px;
+    top: 105px;
+}
+.gwd-span-1njn {
+    top: 0px;
+}
+.gwd-button-1piu {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    left: 152px;
+    top: 30px;
+}
+.gwd-p-dnhj {
+    left: 218px;
+    top: 280px;
+    height: 170px;
+    text-align: right;
 }</style>
   <script src="myMusicFunctions.js"></script>
   <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
@@ -186,21 +208,37 @@ body {
     gwd.scale1 = function(event) {
       const tOn = 0.5;
       const tOff = 0.1;
-      const f1 = 440;
+      const f1 = 2 * 440;
       const f2 = f1 * Math.pow(2, 2 / 12);
       const f3 = f1 * Math.pow(2, 4 / 12);
       const f4 = f1 * Math.pow(2, 5 / 12);
       const f5 = f1 * Math.pow(2, 7 / 12);
       const f6 = f1 * Math.pow(2, 9 / 12);
+      const f7dom = f1 * Math.pow(2, 10 / 12);
       const f7 = f1 * Math.pow(2, 11 / 12);
       const f8 = f1 * Math.pow(2, 12 / 12);
-      playScale(tOn, tOff, f1, f2, f3, f4, f5, f6, f7, f8);
+      playScale(tOn, tOff, f1, f2, f3, f4, f5, f6, f7dom, f7, f8);
     };
     gwd.Harmonics = function(event) {
       playHarmonics(1.0, 0.2);
     };
     gwd.newtest = function(event) {
       testIt(2, 4, 6);
+    };
+    gwd.Scale_harmonics = function(event) {
+      const tOn = 0.5;
+      const tOff = 0.1;
+      const fStart = 110;
+      const f1 = 8 * fStart;
+      const f2 = 9 * fStart;
+      const f3 = 10 * fStart;
+      const f4 = 11 * fStart;
+      const f5 = 12 * fStart;
+      const f6 = 13 * fStart;
+      const f7dom = 14 * fStart;
+      const f7 = 15 * fStart;
+      const f8 = 16 * fStart;
+      playScale(tOn, tOff, f1, f2, f3, f4, f5, f6, f7dom, f7, f8);
     };
   </script>
   <script type="text/javascript" gwd-events="registration">
@@ -211,12 +249,14 @@ body {
       gwd.actions.events.addHandler('button_2', 'click', gwd.button2event, false);
       gwd.actions.events.addHandler('button_3', 'click', gwd.scale1, false);
       gwd.actions.events.addHandler('button_4', 'click', gwd.Harmonics, false);
+      gwd.actions.events.addHandler('button_5', 'click', gwd.Scale_harmonics, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('button_1', 'click', gwd.button1event, false);
       gwd.actions.events.removeHandler('button_2', 'click', gwd.button2event, false);
       gwd.actions.events.removeHandler('button_3', 'click', gwd.scale1, false);
       gwd.actions.events.removeHandler('button_4', 'click', gwd.Harmonics, false);
+      gwd.actions.events.removeHandler('button_5', 'click', gwd.Scale_harmonics, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -226,7 +266,7 @@ body {
 <body class="htmlNoPages">
   <button id="button_2" class="gwd-button-1ljf">Major chord (harmonics)</button>
   <button id="button_1" class="gwd-button-4rgs">Major chord (equal temperament)</button>
-  <button id="button_3" class="gwd-button-ne33">Major scale (equal temperament)</button>
+  <button id="button_3" class="gwd-button-ne33">Major scale (equal temperament with dom7th)</button>
   <img class="gwd-img-1e0m" src="1c50h.png">
   <img class="gwd-img-okcl" src="2c50h.png">
   <img class="gwd-img-1lbf" src="3c50h.png">
@@ -237,16 +277,22 @@ body {
   <img class="gwd-img-1c1d" src="8c50h.png">
   <button id="button_4" class="gwd-button-10p7">Harmonics</button>
   <p class="gwd-p-6fow">440Hz<br>
-    554Hz<br>
-    659Hz</p>
+     554Hz<br>
+     659Hz
+  </p>
   <p class="gwd-p-1lxw">440Hz<br>
-    550Hz<br>
-    660Hz</p>
-  <p class="gwd-p-dkab"><span class="gwd-span-1ujm">110Hz<br>220Hz<br>330Hz<br>440Hz<br>550Hz<br>660Hz<br>770Hz<br>880Hz</span><br>
+     550Hz<br>
+     660Hz
+  </p>
+  <p class="gwd-p-dkab gwd-p-yyig"><span class="gwd-span-1ujm">110Hz<br>220Hz<br>330Hz<br>440Hz<br>550Hz<br>660Hz<br>770Hz<br>880Hz</span><br>
     
   </p>
-  <p class="gwd-p-dkab gwd-p-fpxq"><span class="gwd-span-1ujm">440Hz<br>494Hz<br>554Hz<br>587Hz<br>659Hz<br>740Hz<br>831Hz<br>880Hz</span><br>
+  <p class="gwd-p-dkab gwd-p-yyig gwd-p-dnhj"><span class="gwd-span-1ujm">880Hz<br>990Hz<br>1100Hz<br>1210Hz<br>1320Hz<br>1430Hz<br>1540Hz<br>1650Hz<br>1760Hz<br></span><br>
     
+  </p>
+  <p class="gwd-p-dkab gwd-p-fpxq"><span class="gwd-span-1ujm gwd-span-1njn">880Hz<br>988Hz<br>1109Hz<br>1175Hz<br>1319Hz<br>1480Hz<br>1568Hz<br>1661Hz<br>1760Hz</span><br>
+    
+    <button id="button_5" class="gwd-button-1piu">Major Scale (harmonics)</button>
   </p>
 
 
