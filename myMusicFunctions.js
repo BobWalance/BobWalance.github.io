@@ -13,9 +13,13 @@
 // RBW 8-10-2022 - Tone sequences are working.
 // RBW 8-10-2022 - There is now one sound sample array to feed the playSound() routine.
 
-// Add the following line the html file. It will associate this javascript file to it. I put it after </style>.
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//
+// Add the following line the html file. It will associate this javascript file to it.
+//   I put it after: </style> and just before: <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
 //  <script src="myMusicFunctions.js"></script>
-
+//
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 /**
  * Play sound in browser
