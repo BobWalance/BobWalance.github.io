@@ -130,19 +130,25 @@ async function playHarmonics(event) { // see the call to asleep() below
   //                finally Library - and drag the 8 images to the workspace. Must also resize them and make them 'invisible'.
 
 
-  // RBW 8-2-2024 -- this is copied from the .html file
-        //<gwd-image source="assets/1c50h.png" scaling="stretch" id="1c50h" class="gwd-image-1jx0 gwd-image-qa0u"></gwd-image>
-        //<gwd-image source="assets/2c50h.png" scaling="stretch" id="2c50h" class="gwd-image-dvhk gwd-image-1vdz"></gwd-image>
-        //<gwd-image source="assets/8c50h.png" scaling="stretch" id="8c50h" class="gwd-image-2ddc gwd-image-1ip1"></gwd-image>
-        //<gwd-image source="assets/7c50h.png" scaling="stretch" id="7c50h" class="gwd-image-1onr gwd-image-1j1a"></gwd-image>
-        //<gwd-image source="assets/6c50h.png" scaling="stretch" id="6c50h" class="gwd-image-ck5z gwd-image-1bcd"></gwd-image>
-        //<gwd-image source="assets/5c50h.png" scaling="stretch" id="5c50h" class="gwd-image-1czg gwd-image-yqa9"></gwd-image>
-        //<gwd-image source="assets/4c50h.png" scaling="stretch" id="4c50h" class="gwd-image-1jck gwd-image-45qf"></gwd-image>
-        //<gwd-image source="assets/3c50h.png" scaling="stretch" id="3c50h_1" class="gwd-image-18qd gwd-image-1ypc"></gwd-image>
+  // RBW 8-7-2024 -- this is copied from the version2.html file
+
+
+
+
+  //<gwd-image source="assets/1c50h.png" scaling="stretch" id="1c50h" class="gwd-image-1wyv gwd-image-v164"></gwd-image>
+  //<gwd-image source="assets/2c50h.png" scaling="stretch" id="2c50h" class="gwd-image-1n9x gwd-image-1tfr"></gwd-image>
+  //<gwd-image source="assets/8c50h.png" scaling="stretch" id="8c50h" class="gwd-image-1371 gwd-image-c8gg"></gwd-image>
+  //<gwd-image source="assets/7c50h.png" scaling="stretch" id="7c50h" class="gwd-image-129n gwd-image-1a0d"></gwd-image>
+  //<gwd-image source="assets/6c50h.png" scaling="stretch" id="6c50h" class="gwd-image-7t3h gwd-image-ash2"></gwd-image>
+  //<gwd-image source="assets/5c50h.png" scaling="stretch" id="5c50h" class="gwd-image-15f7 gwd-image-17lg"></gwd-image>
+  //<gwd-image source="assets/4c50h.png" scaling="stretch" id="4c50h" class="gwd-image-1ovu gwd-image-12rl"></gwd-image>
+  //<gwd-image source="assets/3c50h.png" scaling="stretch" id="3c50h_1" class="gwd-image-1iv4 gwd-image-h0dw"></gwd-image>
+
+
 
 
 // RBW 8-2-2024 - it apparently doesn't matter whether the first "gwd-image-xxxx" entry or the second entry is used
-  const harmonicImage = ['gwd-image-1jx0','gwd-image-dvhk','gwd-image-18qd','gwd-image-1jck','gwd-image-1czg','gwd-image-ck5z','gwd-image-1onr','gwd-image-2ddc']; // using first in list
+  const harmonicImage = ['gwd-image-1wyv','gwd-image-1n9x','gwd-image-1iv4','gwd-image-1ovu','gwd-image-15f7','gwd-image-7t3h','gwd-image-129n','gwd-image-1371']; // using first in list
  // const harmonicImage = ['gwd-image-qa0u','gwd-image-1vdz','gwd-image-1ypc','gwd-image-45qf','gwd-image-yqa9','gwd-image-1bcd','gwd-image-1j1a','gwd-image-1ip1']; // using the second in the list
 
   var startFreq = 110;
