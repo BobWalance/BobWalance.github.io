@@ -175,17 +175,17 @@ function sleep(ms) {
 /*
 // // // // // // //
 // // // // // // //
-function sleep(ms) {
-  let end, start, startTime, endTime;
-  start = new Date();
-  end = new Date();
-  startTime = start.getTime();
-  endTime = end.getTime();
-  while ( startTime < (endTime + ms) ){
-    start = new Date();
-    startTime = start.getTime();
-  }
-}
+// function sleep(ms) {
+//   let end, start, startTime, endTime;
+//   start = new Date();
+//   end = new Date();
+//   startTime = start.getTime();
+//   endTime = end.getTime();
+//   while ( startTime < (endTime + ms) ){
+//     start = new Date();
+//     startTime = start.getTime();
+//   }
+// }
 // // // // // // //
 // // // // // // //
 */
