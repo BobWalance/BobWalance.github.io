@@ -82,9 +82,9 @@ function playSound({
 }
 ////////////////////////////////////////////////
 function playNoteOrChord() { // arguments (tone or chord time, freq1, A1, freq2, A2 ...) // RBW 8-2-2024 added A1, A2... for amplitude control
-//  const sampleRate = 44100; // samples per second
+  const sampleRate = 44100; // samples per second
 
-  const sampleRate = 22050; // samples per second - RBW 8-8-2024 TEST
+  //const sampleRate = 22050; // samples per second - RBW 8-8-2024 TEST - didn't help
 
   const maxToneTime = 5; // seconds
 
