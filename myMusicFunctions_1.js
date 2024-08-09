@@ -1,3 +1,4 @@
+// RBW 8-8-2024  - TESTING IOS
 // RBW 8-5-2024  - Had to cast the toneOnTime in the Play Harmonics function using "+" (the unary plus operator)
 // RBW 8-2-2024  - file is now myMusicFunctions_1.js
 //                 Will now have control over the amplitude of each tone.
@@ -36,6 +37,12 @@ function playSound({
   const audioContext = new AudioContext({
     sampleRate
   });
+
+
+  audioContext.resume(); // RBW 8-8-2024 TESTING
+
+
+
   // create audio buffer of the same length as our array
   const audioBuffer = audioContext.createBuffer(1, array.length, sampleRate);
   // this copies our sine wave to the audio buffer
@@ -47,6 +54,10 @@ function playSound({
   source.start();
 //  console.log('playing');
 //  console.log(array);
+
+
+  //audioContext.resume(); // RBW 8-8-2024 TESTING
+
 }
 ////////////////////////////////////////////////
 function playNoteOrChord() { // arguments (tone or chord time, freq1, A1, freq2, A2 ...) // RBW 8-2-2024 added A1, A2... for amplitude control
