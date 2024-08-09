@@ -33,13 +33,18 @@
 function playSound({
   array, sampleRate
 }) {
+
+
+  //audioContext.suspend(); // RBW 8-8-2024 TESTING - didn't work here
+
+
   // We have to start with creating AudioContext
   const audioContext = new AudioContext({
     sampleRate
   });
 
 
-  audioContext.resume(); // RBW 8-8-2024 TESTING
+  //audioContext.resume(); // RBW 8-8-2024 TESTING - .resume didn't work here but didn't hurt.
 
 
 
@@ -49,19 +54,38 @@ function playSound({
   audioBuffer.copyToChannel(array, 0);
   // some JavaScript magic to actually play the sound
   const source = audioContext.createBufferSource();
+
+
+  ////source.stop(); RBW 8-8-2024 - TEST -- nope 2
+
+
+
   source.connect(audioContext.destination);
   source.buffer = audioBuffer;
+
+
+  ////source.stop(); RBW 8-8-2024 - TEST -- nope 3
+
+
+
   source.start();
+
+
+  //source.stop(); RBW 8-8-2024 - TEST -- nope 1
+
+
 //  console.log('playing');
 //  console.log(array);
 
 
-  //audioContext.resume(); // RBW 8-8-2024 TESTING
 
 }
 ////////////////////////////////////////////////
 function playNoteOrChord() { // arguments (tone or chord time, freq1, A1, freq2, A2 ...) // RBW 8-2-2024 added A1, A2... for amplitude control
-  const sampleRate = 44100; // samples per second
+//  const sampleRate = 44100; // samples per second
+
+  const sampleRate = 22050; // samples per second - RBW 8-8-2024 TEST
+
   const maxToneTime = 5; // seconds
 
   if (arguments[0] > maxToneTime) {
